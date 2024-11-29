@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    
+    letter-spacing: 5px;
+    margin: 0;
+    background-color:  #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul {
+    list-style: none;
+}
+
+        /* Header e navegação */
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    width: 100px;
+    object-fit: cover;
+}
+
+/* Header e navegação */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;
+    background-color: #1c1c1c;
+    padding: 15px 20px;
+}
+
+.navbar {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 16px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    transition: .4s;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.nav-links li a:hover {
+    color: #575757;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+        
+
+
+
+.contact-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Altura do banner */
+    background: #ffffff; /* Gradiente de fundo */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Efeito para o texto */
+  .contact-banner h1 {
+    font-size: 36px;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  }
+  
+  
+  .container8 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    }
+    
+    /* Formulário principal */
+    .form-container8 {
+    width: 48%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .form-container8 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    /* Estilo para os campos de input e textarea */
+    .form-container8 input,
+    .form-container8 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #e6e4dd;
+    border: 1px solid #9f8b7abe;
+    border-radius: 40px;
+    }
+    
+    /* Caixa de opinião */
+    .opinion-box8 {
+    margin-top: 10px;
+    height: 100px;
+    resize: none;
+    }
+    
+    /* Div para manter os campos de nome, email e senha lado a lado */
+    .input-group8 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    }
+    
+    .input-group8 input {
+    width: 48%; /* Cada campo ocupa 48% da largura */
+    }
+    
+    /* Campo Nome */
+    .input-name8 {
+    margin-bottom: 15px;
+    }
+    
+    /* Container da imagem com o segundo formulário */
+    .image-container8 {
+    height: 350px;
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    }
+    
+    .image-container8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3; /* Baixa opacidade */
+    }
+    
+    /* Formulário dentro do container da imagem */
+    .image-form8 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .image-form8 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .image-form8 input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    }
+    
+
+  
+
+
+    .Pai2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10%;
+        color: #fff;
+        background-color: #fff;
+      }
+      
+      
+      .Boox{
+        position: relative;
+        width: 280px;
+        height: 250px;
+        margin: 5px;
+        border-radius: 15px;
+        background-color: #000000;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+        text-align: center;
+        border-top: 1px solid rgb(255, 255, 255);
+        border-left: 1px solid rgba(255, 255, 255, 0.753);
+        box-shadow: 5px 5px 6px rgba(82, 76, 76, 0.151);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+
+
+
+ /*footer*/ 
+
+
+
+ .containers{
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #161616;
+    padding:  70px 0;
+}
+.footer-col{
+    padding: 0 15px;
+}
+
+
+.footer-col h4{
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #3a4b53;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+
+.footer-col ul li a{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #c4c4c4;
+    
+}
