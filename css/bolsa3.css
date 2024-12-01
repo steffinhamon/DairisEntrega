@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;
+    background-color: #1c1c1c;
+    padding: 15px 20px;
+}
+
+.navbar {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 16px;
+    margin-top: 18px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    transition: .4s;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.nav-links li a:hover {
+    color: #575757;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.home-container {
+    height: 100vh;
+    width: 100%;
+    padding: 1% 8%;
+    background-color: #cfcdc2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-content {
+    display: grid;
+    row-gap: 2.5rem;
+}
+
+
+.home-head h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .35rem;
+}
+
+.price label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.price p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.home-btn {
+    border: 1px solid #5f5f5f;
+    outline: none;
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Jost';
+    color: #4e4e4e;
+    cursor: pointer;
+    transition: background-color .4s, color .4s;
+}
+
+.home-btn:hover {
+    color: #fff;
+    background-color: #ae825f;
+}
+
+.containers{
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #161616;
+    padding:  70px 0;
+}
+.footer-col{
+    padding: 0 15px;
+}
+
+
+.footer-col h4{
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #3a4b53;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #c4c4c4;
+    
+}
+
+@media screen and (max-width: 980px) {
+    .nav-menu {
+        width: 50%;
+    }
+    .home-container {
+        flex-direction: column;
+        height: 100%;
+        padding: 4% 2.5%;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    .home-content {
+        place-items: center;
+    }
+    .card:hover {
+        scale: 1.2;
+    }
+    .footer-contact {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 4rem;
+    }
+}
+
