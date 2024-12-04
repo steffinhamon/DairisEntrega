@@ -7,6 +7,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.back-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 60px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    top: 20px;
+  }
+   
+  .back-arrow:hover {
+    color: #4cffd2;
+  }
+
 body {
     display:flex;
     justify-content: center;
@@ -172,6 +187,7 @@ form > button:hover,
         display: flex;
         flex-direction: column;
         gap:20px;
+
     }
 
     .box-info {
@@ -182,4 +198,27 @@ form > button:hover,
         font-size: 1.5rem;
     }
 }
+    
 
+.seta{
+    display:flex;
+    gap:5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+ 
+    .back-arrow {
+    position: fixed;
+    top: 20px; 
+    left: unset; 
+    font-size: 30px;
+}
+.content{
+    margin-top: 80px;
+    padding-left: 50px;
+}
+}
