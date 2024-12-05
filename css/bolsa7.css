@@ -8,7 +8,9 @@ html {
     scroll-behavior: smooth;
     font-family: 'Jost', sans-serif;
 }
-
+body, html{
+    overflow-x: hidden;
+}
 li {
     list-style: none;
 }
@@ -25,14 +27,24 @@ img {
     overflow: clip;
 }
 
+.logo {
+    width: 140px;
+    object-fit: cover;
+}
+
+
+
+/* Header e navegação */
 header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    height: 50px;
-    background-color: #1c1c1c;
+    height: 80px;
     padding: 15px 20px;
+    background-color: #0000005b;
+    transition: .4s;
 }
+
 
 .navbar {
     font-size: 10px;
@@ -42,8 +54,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    bottom: 16px;
-    margin-top: 18px;
+    bottom: 14px;
 }
 
 
@@ -55,14 +66,14 @@ header {
 }
 
 .nav-links li a {
-    color: white;
+    color: rgb(255, 255, 255);
     transition: .4s;
-    font-size: 12px;
     margin: 4px;
+    font-size: 15px;
 }
 
 .nav-links li a:hover {
-    color: #575757;
+    text-decoration: underline;
 }
 
 
@@ -80,12 +91,13 @@ header {
     border-radius: 5px;
 }
 
+/* Responsividade */
 @media (max-width: 900px) {
     .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #333333;
+        background-color: #333333c7;
         position: absolute;
         top: 50px;
         left: 0;
@@ -106,12 +118,14 @@ header {
         display: flex;
     }
 }
+        
+/*LOGO com transição*/
 
 .home-container {
     height: 100vh;
     width: 100%;
     padding: 1% 8%;
-    background-color: #cfcdc2;
+    background-color: #f9f7f4;
     display: flex;
     align-items: center;
     justify-content: space-around;

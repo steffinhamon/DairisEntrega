@@ -9,7 +9,6 @@
 body, html{
     overflow-x: hidden;
 }
-
 .back-arrow {
     position: fixed;
     bottom: 20px;
@@ -21,15 +20,15 @@ body, html{
     top: 20px;
   }
    
-.back-arrow:hover {
+  .back-arrow:hover {
     color: #4cffd2;
-}
+  }
 
 body {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url('../imagem/contato01.JPG');
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(img/fundo.JPG);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

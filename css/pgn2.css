@@ -6,7 +6,9 @@
     line-height: 32px;
   
 }
-
+body, html{
+    overflow-x: hidden;
+}
 body {
     margin: 0;
     background-color:  #f9f7f4;

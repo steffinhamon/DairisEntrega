@@ -12,13 +12,17 @@ setTimeout(function() {
     }, 900);
 }, 600); 
 
-
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
+// Adiciona evento de clique no hambúrguer
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active'); // Alterna a classe 'active' para mostrar/ocultar o menu
+});
 
-setTimeout(() => {
-    hamburger.click(); 
-}, 100); 
-
-
+// Opcional: fecha o menu ao clicar em um link
+navLinks.addEventListener('click', (event) => {
+  if (event.target.tagName === 'A') {
+    navLinks.classList.remove('active');
+  }
+});

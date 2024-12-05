@@ -5,7 +5,9 @@
   font-family: sans-serif;
   line-height: 32px;
 }
-
+body, html{
+  overflow-x: hidden;
+}
 body {
   font-size: 20px;
   font-family: sans-serif;
@@ -126,12 +128,11 @@ header {
 
 /* Estilo do texto */
 .texto {
-    margin-top: 50px;
     z-index: 1;
-    font-size: 150px;
+    font-size: 12vw;
     font-weight: bold;
     text-transform: uppercase;
-    background-image: url('../imagem/Cancio.png');
+    background-image: url(../imagem/Cancio.png);
     background-size: cover;
     -webkit-background-clip: text;
     color: transparent;
@@ -140,12 +141,36 @@ header {
     align-items: center;
     height: 100vh;
     text-align: center;
-    position: relative; 
-    opacity: 1; 
+    position: relative;
+    opacity: 1;
     transition: opacity 1s ease;
+    line-height: 1.2;
 }
 
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .texto {
+      font-size: 10vw; /* Ajuste do tamanho da fonte para telas médias */
+      line-height: 1.2; /* Mantém o espaçamento adequado */
+  }
+}
+
+@media (max-width: 768px) {
+  .texto {
+      font-size: 14vw; /* Ajuste para tablets */
+      line-height: 1.1; /* Reduz o espaçamento para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .texto {
+      line-height: 1.1; /* Reduz o espaçamento ainda mais */
+  }
+}
 .novo-conteudo {
+  z-index: 100;
     opacity: 0;
     transform: translateY(50px); 
     transition: opacity 1s ease, transform 1s ease;

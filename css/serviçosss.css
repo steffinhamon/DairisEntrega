@@ -4,13 +4,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
     line-height: 32px;
-    font-size: 20px;
+   
 }
 
 body {
     margin: 0;
     background-color:  #ffffff;
-
+    font-size: 20px;
 }
 
 a {
@@ -30,7 +30,7 @@ ul {
 }
 
 .logo {
-    width: 120px;
+    width: 140px;
     object-fit: cover;
 }
 
@@ -39,8 +39,8 @@ header {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    height: 60px;
-    background-color: #1c1c1c;
+    height: 80px;
+    background-color: #1c1c1cad;
     padding: 15px 20px;
 }
 
@@ -53,7 +53,6 @@ header {
     margin: 0 auto;
     position: relative;
     bottom: 16px;
-
 }
 
 
@@ -72,7 +71,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #575757;
+  text-decoration: underline;
 }
 
 
@@ -85,7 +84,7 @@ header {
 
 .hamburger .bar {
     width: 30px;
-    height: 1px;
+    height: 0.8px;
     background-color: white;
     border-radius: 5px;
 }
@@ -95,7 +94,38 @@ header {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #333333;
+        background-color: #333333c7;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+.navigation .bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.nav-links {
+    display: flex    ;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333333c7;
         position: absolute;
         top: 50px;
         left: 0;
@@ -115,50 +145,52 @@ header {
     .nav-links.active {
         display: flex;
     }
-}  
-   
+}
+        
 
 
 .container {
-
-    padding-top: 10% ;
     display: flex;
-    flex: 1;
-    background-color: #ffffff;
-    justify-content: space-between;
-    box-sizing: border-box;
-    gap: 20px;
-}
-
-.container h1  {
- align-items: center;
-    display: flex;
-   justify-content: center;
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   font-size: 50px;
-   margin: 20px;
-}
-.container p{
-  align-items: center;
-  justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 100px;
-  
-
-}
-
-
-.container h2 {
+    justify-content: center;
     align-items: center;
-       display: flex;
-      justify-content: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: 30px;
-      margin: 20px;
-   }
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 10%;
+}
+
+.text-side {
+    max-width: 800px;
+    text-align: center;
+}
 
 
+h1, h2 {
+    margin-bottom: 20px;
+}
 
+p {
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .text-side {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
              /*slideess*/
 
 
@@ -167,7 +199,8 @@ header {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    position: relative; /* Mudado para "relative" para permitir posicionamento do texto dentro da área do slide */
+    position: relative; 
+   
 }
 
 .navigation {
@@ -175,17 +208,8 @@ header {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-}
-
-.bar {
-    width: 70px;
-    height: 17px;
-    border: 2px solid white;
-    margin: 6px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .4s;
+    display: flex; 
+    font-size: 20px;
 }
 
 .bar:hover {
@@ -216,8 +240,7 @@ input {
     object-fit: cover;
 }
 
-            /* Posicionando o texto dentro do slide, de forma que fique sobre a imagem */
-
+         
 
 
 
@@ -341,19 +364,29 @@ input {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.containers{
+    max-width: 1170px;
+    margin: auto;
+   
+}
+
+
+
+.row{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -425,4 +458,9 @@ ul{
     align-items: center;
     color: #f9f7f4;
     font-size: 12px;
+}
+
+
+.text-side h2{
+    margin-top: 10%;
 }
